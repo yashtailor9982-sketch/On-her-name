@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 25vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 38px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #ff4d6d;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #ffe6ec;
+}
+
+#secret {
+  display: none;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Happy Valentine's Day ❤️</h1>
+<p>You are my today, my tomorrow, and my forever.</p>
+
+<button onclick="showMessage()">Click for a Surprise 💌</button>
+
+<p id="secret">Every heartbeat of mine whispers your name. I love you endlessly.</p>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
