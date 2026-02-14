@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>For My Love ❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinkal ❤️</title>
+
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('wedding.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-align: center;
-  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.55);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .container {
-  margin-top: 25vh;
+  position: relative;
+  text-align: center;
+  z-index: 2;
   padding: 20px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 h1 {
-  font-size: 38px;
-  animation: fadeIn 3s ease-in-out;
+  font-size: 48px;
+  margin: 0;
+  animation: glow 2s infinite alternate;
 }
 
-p {
-  font-size: 20px;
+h2 {
+  font-weight: 300;
+  margin-top: 10px;
 }
 
 button {
-  padding: 15px 30px;
-  font-size: 18px;
-  border: none;
+  margin-top: 25px;
+  padding: 14px 30px;
   border-radius: 30px;
-  background: white;
-  color: #ff4d6d;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  backdrop-filter: blur(10px);
   cursor: pointer;
-  margin-top: 20px;
+  font-size: 16px;
 }
 
 button:hover {
-  background: #ffe6ec;
+  background: rgba(255,255,255,0.4);
 }
 
 #secret {
   display: none;
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff; }
+  to { text-shadow: 0 0 30px #ffcccc; }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
 </head>
 
 <body>
 
+<div class="overlay"></div>
+
 <div class="container">
-<h1>Happy Valentine's Day ❤️</h1>
-<p>You are my today, my tomorrow, and my forever.</p>
+<h1>Dinkal ❤️</h1>
+<h2>6 February 2026</h2>
 
-<button onclick="showMessage()">Click for a Surprise 💌</button>
+<button onclick="showMessage()">Open My Heart 💌</button>
 
-<p id="secret">Every heartbeat of mine whispers your name. I love you endlessly.</p>
+<p id="secret">
+From the moment I held your hand on our wedding day,  
+I knew my forever had begun.  
+You are my home, my peace, my everything.
+</p>
 </div>
 
 <script>
